@@ -25,11 +25,28 @@ public class ArrayListSortDemo1 {
         arrayList.add("A");
 
         arrayList.sort(new StringComparator());
+        
+        arrayList.sort(new Comparator<String>(){
+            public int compare(String o1, String o2) {
+                return o1.compareTo(o2);
+            }
+        });
+        
+        arrayList.sort((String o1, String o2) -> {
+            return o1.compareTo(o2); 
+        });
+        
+        arrayList.sort((s1, s2) -> s1.compareTo(s2));
+        // arrayList.sort(/* new StringComparator() */);
 
     }
 }
 
-class StringComparator implements Comparator<String> {
+class StringComparator implements Comparator<String>{
 
-   
+    @Override
+    public int compare(String o1, String o2) {
+        return o1.compareTo(o2);
+    }
+    
 }

@@ -22,7 +22,7 @@ public class ArrayListSortDemo2 {
         arrayList.add("BBBBBBBBB");
         arrayList.add("A");
 
-        arrayList.sort(new StringComparator());
+        arrayList.sort(new AlphabeticalStringComparator());
         System.out.println("Alphabetical: " + arrayList);
         arrayList.sort(new StringComparatorByLength());
         System.out.println("By length: " + arrayList);

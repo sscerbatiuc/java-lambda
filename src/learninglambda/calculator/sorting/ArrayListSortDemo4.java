@@ -5,10 +5,6 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * This class demonstrates sorting the array list by 2 criterions: <br/>
- * 1. alphabetical <br/>
- * 2. by the String's length
- *
  * @author sscerbatiuc
  */
 public class ArrayListSortDemo4 {

@@ -29,9 +29,9 @@ public class ArraySortingExternal {
         int n = array.length;
         int temp;
         for (int i = 0; i < n; i++) {
-            System.out.println("Повторение: " + (i + 1));
+            System.out.println("Iteratia: " + (i + 1));
             for (int j = 1; j < (n - i); j++) {
-                System.out.println("Сравниваем " + array[j - 1] + " и " + array[j]);
+                System.out.println("Comparam " + array[j - 1] + " cu " + array[j]);
                 if (array[j - 1] > array[j]) {
                     // Swap
                     temp = array[j - 1];
